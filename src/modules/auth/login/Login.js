@@ -46,7 +46,7 @@ const Login = () => {
         <div className="login-container">
             <div className="login-content">
                 <CustomForm FormFields={LoginFormFields} />
-                <Container>
+                <Container className="margin-top">
                     <Link to="/auth/register">Not a user? Register here</Link>
                 </Container>
             </div>

@@ -80,7 +80,7 @@ export class Register extends Component {
                             disabled={!this.state.isValidForm}
                         >SUBMIT</Button>
                     </Container>
-                    <Container>
+                    <Container className="margin-top">
                         <Link to="/auth/login">
                             Already a user? click here to login
                         </Link>
