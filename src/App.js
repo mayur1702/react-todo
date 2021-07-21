@@ -1,10 +1,11 @@
 import React from 'react';
 import "./App.scss";
-import Register from './modules/auth/registration/Register';
+import Routes from './modules/routes/Routes';
+
 const App = () => {
   return (
     <div className="app-container">
-      <Register />
+      <Routes />
     </div>
   );
 };

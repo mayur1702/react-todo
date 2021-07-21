@@ -1,10 +1,11 @@
 import { Button, Container } from '@material-ui/core';
 import React from 'react';
 import { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Input from '../../shared/Input';
 import './Register.scss';
 
-export default class Register extends Component {
+export class Register extends Component {
 
     constructor(props) {
         super(props);
@@ -36,7 +37,7 @@ export default class Register extends Component {
             this.checkValidation();
         });
     }
-    
+
     render () {
         return (
             <div className="register-container">
@@ -78,6 +79,11 @@ export default class Register extends Component {
                             style={{width: '100%', marginTop: '14px'}}
                             disabled={!this.state.isValidForm}
                         >SUBMIT</Button>
+                    </Container>
+                    <Container>
+                        <Link to="/auth/login">
+                            Already a user? click here to login
+                        </Link>
                     </Container>
                 </div>
             </div>
