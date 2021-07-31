@@ -1,11 +1,10 @@
 import React from 'react';
 import "./App.scss";
-import Routes from './modules/routes/Routes';
 
 const App = () => {
   return (
     <div className="app-container">
-      <Routes />
+      <h1>hello world</h1>
     </div>
   );
 };
